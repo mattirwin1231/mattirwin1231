@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <title> Matthew Irwin's Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="portfolioimages/logo.png" class="logo">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <p>Computer Information Systems - ASU</p>
+                    <h1>Hi, I'm <span>Matthew</span><br>Irwin from Colorado</h1>
+                </div>
+            </div>
+        </div>
+
+<!------------- about ------------>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="portfolioimages/DSC01043.JPG">
+                    </div>
+                    <div class="about-col-2">
+                        <h2 class = "sub-title">About Me</h2>
+                        <p>Enrolled as a third year student at Arizona 
+                        State University studying Computer Information 
+                        Systems. Previous work experience has included 
+                        working in the IT department of a law firm, 
+                        as well as working for a graphic design firm 
+                        which specialized in making graphics and marketing 
+                        materials for the Colorado Department of Transportation. 
+                        Interested in software engineering, data science, 
+                        data analytics, cybersecurity, product and program
+                         management, IT vendor management, and other tech 
+                         industry related positions. Currently looking for 
+                         internship opportunities for either the spring 2023 
+                         or the summer 2023 internship seasons.</p>
+
+                         <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                         </div>
+                         <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Java</span><br>Developing applications and storing data in databases.</li>
+                                <li><span>Python</span><br>Developing applications and working with Pandas.</li>
+                                <li><span>SQL</span><br>Performing SQL queries within databases (DDL, DML, DCL).</li>
+                                <li><span>HTML/CSS</span><br>Creating stunning websites through learned coding techniques.</li>
+                            </ul>
+                         </div>
+                         <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Irwin Fraley PLLC. (06/2021 - 08/2022)</span><br>It Support Technician</li>
+                                <li><span>Estate Media LLC. (04/2021 - 09/2021)</span><br>Transportation Planning Specialist</li>
+                            </ul>
+                         </div>
+                         <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Arizona State University (2020 - 2024)</span><br>BSc in Computer Information Systems (4.0 GPA) </li>
+                                <li><span>Legend High School (2016 - 2020)</span><br>High School Diploma (4.2 GPA)</li>
+                            </ul>
+                         </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+<!-------portfolio--------->
+        <div id="portfolio">
+            <div class="container">
+                <h2 class="sub-title">My Work</h2>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link")
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab")
+                }
+
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+        </script>
+    </body>
+</html>
