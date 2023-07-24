@@ -1,3 +1,3 @@
-### Hi there 👋
+### Howdy 🤠
 
 Welcome to my GitHub page! I'm a senior at Arizona State University, majoring in Computer Information Systems. Here, you'll discover a collection of my diverse projects, ranging from coursework assignments to personal endeavors, all showcasing my proficiency in Python, Java, JavaScript, HTML/CSS, and Node.js. As an aspiring developer, I'm currently dedicated to honing my skills in React.js and C#, continuously striving to innovate and improve. Feel free to explore my repositories and witness my passion for coding both inside and outside the classroom. Together, let's embrace the world of software development and make meaningful contributions to the digital realm.
